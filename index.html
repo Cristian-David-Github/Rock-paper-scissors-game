@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPER ROCK SCISSORS</title>
+    <link rel="stylesheet" href="./app.css">
+
+</head>
+
+<body>
+
+    <h1>PAPER ROCK || SCISSORS</h1>
+    <p>The Classic Game, you already know da rules.</p>
+    <p id="matchesPlayed">Matches played</p>
+    <div id="game-container">
+        <div id="infotainer">
+            <div id="user-selection"></div>
+            <div id="info-display">
+                <h3 id="main-info">DEFAULT CONTENT</h3>
+                <p id="scoreboard">Empty Scoreboard</p>
+            </div>
+            <div id="computer-selection"></div>
+        </div>
+        <div id="options-container">
+            <button id="paperbutton" class="options-button">paper</button><button
+                class="options-button">rock</button><button class="options-button">scissors</button>
+        </div>
+        <p>Select amount of rounds to be played!</p>
+        <select name="rounds" id="rounds">
+            
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+        </select>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
