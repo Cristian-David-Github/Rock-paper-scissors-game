@@ -36,14 +36,14 @@ optionButtons.forEach((option) => {
 
             scoreboard.textContent = `User = ${userScore} Computer = ${computerScore}`
             mainInfo.textContent = ` You selected ${options[userSelection].name}`;
-            displayUserSelection.innerHTML = ` <img src=${options[userSelection].picture} alt="user-selection" width="90%" heigth="90%"/>`;
+            displayUserSelection.innerHTML = ` <img src=${options[userSelection].picture} alt="user-selection" width="80%" heigth="80%"/>`;
 
 
             setTimeout(() => { mainInfo.textContent = `Now is my turn` }, 2000)
             computerSelection = randomComputerSelection();
             setTimeout(() => {
                 mainInfo.textContent = `I selected ${options[computerSelection].name}`
-                displayComputerSelection.innerHTML = ` <img src=${options[computerSelection].picture} alt="computer-selection" width="90%" heigth="90%"/>`;
+                displayComputerSelection.innerHTML = ` <img src=${options[computerSelection].picture} alt="computer-selection" width="80%" heigth="80%"/>`;
             }, 4000);
             setTimeout(() => {
                 compareInputs(userSelection, computerSelection);
